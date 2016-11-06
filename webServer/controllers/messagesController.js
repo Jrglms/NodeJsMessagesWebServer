@@ -14,6 +14,7 @@
                 uri: "/messages",
                 baseUrl: baseUrl,
                 method: "GET",
+                json: true,
                 headers: {
                     "user-identifier": "1000"
                 }
@@ -25,11 +26,9 @@
                     res.status(500);
                 }
                 else {
-                    res.send(body);
+                    res.render("messages/globalMessages", { messages: body });
                 }
             });
-
-
         });
     };
 

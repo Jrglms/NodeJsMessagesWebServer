@@ -1,0 +1,20 @@
+﻿@html.extend('master', function(model){
+
+	@html.block("title", function(model) {
+	
+		@:Global Messages
+	})
+
+	@html.block("body", function(model) {
+	
+		<h1>Messages</h1>
+		@model.messages.forEach(function(message) {
+			
+			<div>
+				<p>Message: <span>@message.message</span></p>
+				<p>Date: <span>@message.date</span></p>
+				<p>UserId: <span>@message.userId</span></p>
+			</div>
+		})
+	})
+})
