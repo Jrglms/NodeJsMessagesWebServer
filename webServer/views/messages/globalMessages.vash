@@ -16,5 +16,13 @@
 				<p>UserId: <span>@message.userId</span></p>
 			</div>
 		})
+
+		<h2>Send a new message</h2>
+		<div>
+			<form action="messages" method="post">
+				<input type="text" name="message">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
 	})
 })
