@@ -1,0 +1,12 @@
+﻿@html.extend('master', function(model){
+
+	@html.block("title", function(model) {
+	
+		@:Not Found
+	})
+
+	@html.block("body", function(model) {
+	
+		<h1>Page Not Found</h1>
+	})
+})
