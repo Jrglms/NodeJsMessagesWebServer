@@ -1,0 +1,12 @@
+﻿@html.extend('master', function(model){
+
+	@html.block("title", function(model) {
+	
+		@:Index
+	})
+
+	@html.block("body", function(model) {
+	
+		<span>Index</span>
+	})
+})
