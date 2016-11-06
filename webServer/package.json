@@ -1,11 +1,14 @@
 {
-    "name": "web-server",
-    "version": "0.0.0",
-    "description": "webServer",
-    "main": "server.js",
-    "author": {
-        "name": "Jorge Lomas",
-        "email": "jorge.lomas.rodriguez@gmail.com",
-        "url": "https://github.com/Jrglms/NodeJsMessagesWebServer"
-    }
+  "name": "web-server",
+  "version": "0.0.0",
+  "description": "webServer",
+  "main": "server.js",
+  "author": {
+    "name": "Jorge Lomas",
+    "email": "jorge.lomas.rodriguez@gmail.com",
+    "url": "https://github.com/Jrglms/NodeJsMessagesWebServer"
+  },
+  "dependencies": {
+    "express": "^4.14.0"
+  }
 }
