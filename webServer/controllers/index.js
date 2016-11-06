@@ -10,6 +10,8 @@
             next();
         })
 
+        require("./messagesController").init(app);
+
         // If request did not match any route, send back a NotFound page
         app.all("*", function (req, res) {
 
