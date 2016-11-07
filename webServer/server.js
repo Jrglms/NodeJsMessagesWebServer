@@ -4,6 +4,12 @@ var app = express();
 
 app.set("view engine", "vash");
 
+var bodyParser = require("body-parser");
+app.use(bodyParser.urlencoded({ extended: true }));
+
+var cookieParser = require("cookie-parser");
+app.use(cookieParser);
+
 require("./controllers").init(app);
 
 var server = http.createServer(app);
