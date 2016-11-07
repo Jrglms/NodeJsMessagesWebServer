@@ -10,6 +10,7 @@
             next();
         })
 
+        require("./authenticationController").init(app);
         require("./messagesController").init(app);
 
         // If request did not match any route, send back a NotFound page

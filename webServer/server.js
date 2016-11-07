@@ -8,7 +8,7 @@ var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 
 var session = require("express-session");
-app.use(session({ "NodeJsMessagesServer" }));
+app.use(session({ secret: "NodeJsMessagesServer", resave: false, saveUninitialized: false }));
 
 require("./controllers").init(app);
 

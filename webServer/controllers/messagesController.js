@@ -16,7 +16,7 @@
                 method: "POST",
                 json: true,
                 headers: {
-                    "user-identifier": "1000"
+                    "user-identifier": req.session.userIdentifier
                 },
                 body: { message: req.body.message }
             }, function (err, response) {
@@ -47,7 +47,7 @@
                 method: "GET",
                 json: true,
                 headers: {
-                    "user-identifier": "1000"
+                    "user-identifier": req.session.userIdentifier
                 }
             }, function (err, response, body) {
 
