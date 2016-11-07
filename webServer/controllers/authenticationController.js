@@ -8,7 +8,7 @@
                 next();
             }
             else if (req.body.userIdentifier) {
-                req.session.userIdentifier = req.body.userIdentifier;
+                req.session.userIdentifier = req.query.userIdentifier;
                 next();
             }
             else {

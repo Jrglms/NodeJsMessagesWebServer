@@ -1,0 +1,19 @@
+﻿@html.extend('master', function(model){
+
+	@html.block("title", function(model) {
+	
+		@:Login
+	})
+
+	@html.block("body", function(model) {
+	
+		<h1>Login</h1>
+		<h2>User identifier:</h2>
+		<div>
+			<form action="messages" method="get">
+				<input type="text" name="userIdentifier">
+				<input type="submit" value="Submit">
+			</form>
+		</div>
+	})
+})
