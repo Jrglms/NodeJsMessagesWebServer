@@ -7,8 +7,8 @@ app.set("view engine", "vash");
 var bodyParser = require("body-parser");
 app.use(bodyParser.urlencoded({ extended: true }));
 
-var cookieParser = require("cookie-parser");
-app.use(cookieParser);
+var session = require("express-session");
+app.use(session({ "NodeJsMessagesServer" }));
 
 require("./controllers").init(app);
 
